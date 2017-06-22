@@ -5,8 +5,11 @@ var druga = 4
 
 //deklaracja funkcji z dwoma parametrami
 function getTriangleArea(a, h) {
-	if ((pierwsza <= 0) && (druga <= 0)){
-		console.log('Nieprawidłowe dane')
+	if ((a <= 0) || (h <= 0)){
+		return('Nieprawidłowe dane')
+	} else {
+		return(a*h/2)
 	}
 }
-getTriangleArea (pierwsza, druga);
+var result = getTriangleArea (pierwsza, druga);
+console.log(result);
